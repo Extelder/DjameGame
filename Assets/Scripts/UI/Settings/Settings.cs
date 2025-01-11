@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using EvolveGames;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
@@ -37,7 +38,7 @@ public class Settings : MonoBehaviour
     private void Start()
     {
         _sensetivitySlider.value = PlayerPrefs.GetFloat("Sensetivity", 2f) / 10;
-        _cameraModule.lookSpeed = PlayerPrefs.GetFloat("Sensetivity", 2f);
+        if (_cameraModule != null) _cameraModule.lookSpeed = PlayerPrefs.GetFloat("Sensetivity", 2f);
 
         AudioListener.volume = PlayerPrefs.GetFloat("Volume", 1);
         _volumeSlider.value = AudioListener.volume;
@@ -45,6 +46,9 @@ public class Settings : MonoBehaviour
 
     private void Update()
     {
+        if (_timeTravel == null)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Escape) && !_timeTravel.Travelling)
         {
             _settingsCanvas.SetActive(!_settingsCanvas.activeSelf);
@@ -62,13 +66,23 @@ public class Settings : MonoBehaviour
 
     public void OnSensetivitySliderValueChanged(float value)
     {
-        _cameraModule.lookSpeed = value * 10f;
-        PlayerPrefs.SetFloat("Sensetivity", _cameraModule.lookSpeed);
+        if (_cameraModule != null) _cameraModule.lookSpeed = value * 10f;
+        PlayerPrefs.SetFloat("Sensetivity", value * 10);
     }
 
     public void OnSoundSliderValueChanged(float value)
     {
         AudioListener.volume = value;
         PlayerPrefs.SetFloat("Volume", value);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene(1);
     }
 }

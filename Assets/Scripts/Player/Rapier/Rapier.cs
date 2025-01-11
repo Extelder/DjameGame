@@ -18,12 +18,17 @@ public class Rapier : MonoBehaviour
     [SerializeField] private string _performAttackBoolAnimationName;
     [SerializeField] private string _obstacleAttackBoolAnimationName;
     [SerializeField] private AudioSource _chargeReady;
+    [SerializeField] private AudioSource _performAttackSound;
     [SerializeField] private ParticleSystem _chargeParticle;
     [field: SerializeField] public int Damage { get; private set; }
 
     private Animator _animator;
+    public event Action ChargingStart;
+    public event Action ChargingEnd;
 
     private bool _charged;
+
+    private bool _charging;
 
     public RaycastHit Hit;
 
@@ -41,6 +46,7 @@ public class Rapier : MonoBehaviour
     {
         if (Input.GetKeyDown(_attackKey) && !Settings.Instance.Open)
         {
+            _charging = true;
             _animator.SetBool(_obstacleAttackBoolAnimationName, false);
 
             _animator.SetBool(_attackBoolAnimationName, true);
@@ -49,20 +55,30 @@ public class Rapier : MonoBehaviour
 
         if (Input.GetKeyUp(_attackKey))
         {
+            _charging = false;
+
+            ChargingEnd?.Invoke();
             _animator.SetBool(_attackBoolAnimationName, false);
             if (_charged)
                 _animator.SetBool(_performAttackBoolAnimationName, true);
         }
     }
 
+    public void ChargeStart()
+    {
+        ChargingStart?.Invoke();
+    }
+
     public void ChargedParticle()
     {
-        _chargeParticle.Play();
+        if (_charging == true)
+            _chargeParticle.Play();
     }
 
     public void ChargeAudio()
     {
-        _chargeReady.Play();
+        if (_charging == true)
+            _chargeReady.Play();
     }
 
     public void ChargeReady()
@@ -73,7 +89,7 @@ public class Rapier : MonoBehaviour
     public void PerformAttack()
     {
         _charged = false;
-
+        _performAttackSound.Play();
         _animator.SetBool(_performAttackBoolAnimationName, false);
 
 
