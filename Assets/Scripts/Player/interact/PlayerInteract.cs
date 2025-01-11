@@ -37,12 +37,6 @@ public class PlayerInteract : RaycastBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.E))
-            TryInteract();
-    }
-
     private IEnumerator CheckingInteractable()
     {
         while (true)
