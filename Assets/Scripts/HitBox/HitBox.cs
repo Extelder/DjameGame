@@ -6,7 +6,7 @@ public class HitBox : MonoBehaviour
 {
     [SerializeField] private Health _health;
 
-    public void Hit(Rapier rapier)
+    public virtual void Hit(Rapier rapier)
     {
         _health.TakeDamage(rapier.Damage);
     }

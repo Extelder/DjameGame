@@ -7,7 +7,6 @@ using UnityEngine;
 public class HatLooking : MonoBehaviour
 {
     [SerializeField] private string _lookAnimatorBoolName = "Looking";
-    [SerializeField] private KeyCode _lookKey;
 
     private Animator _animator;
 
@@ -18,12 +17,12 @@ public class HatLooking : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(_lookKey) && !Settings.Instance.Open)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && !Settings.Instance.Open)
         {
             _animator.SetBool(_lookAnimatorBoolName, true);
         }
 
-        if (Input.GetKeyUp(_lookKey))
+        if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             _animator.SetBool(_lookAnimatorBoolName, false);
         }
