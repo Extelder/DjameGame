@@ -19,6 +19,7 @@ public class Rapier : MonoBehaviour
     [SerializeField] private string _obstacleAttackBoolAnimationName;
     [SerializeField] private AudioSource _chargeReady;
     [SerializeField] private AudioSource _performAttackSound;
+    [SerializeField] private AudioSource _flashSound;
     [SerializeField] private ParticleSystem _chargeParticle;
     [field: SerializeField] public int Damage { get; private set; }
 
@@ -31,10 +32,21 @@ public class Rapier : MonoBehaviour
     private bool _charging;
 
     public RaycastHit Hit;
+    
+    public static Rapier Instance { get; private set; }
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        if (!Instance)
+        {
+            Instance = this;
+            return;
+        }
+        
+        Debug.LogError(gameObject);
+        Debug.LogError("There`s one more rapier");
+        Debug.Break();
     }
 
     private void OnDrawGizmosSelected()
@@ -62,6 +74,11 @@ public class Rapier : MonoBehaviour
             if (_charged)
                 _animator.SetBool(_performAttackBoolAnimationName, true);
         }
+    }
+
+    public void FleshSound()
+    {
+        _flashSound.Play();
     }
 
     public void ChargeStart()

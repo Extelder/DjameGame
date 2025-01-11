@@ -9,10 +9,20 @@ public class TimeTravelCollisionChecker : MonoBehaviour
 
     public bool Detected;
 
+    private Collider _collider;
+
     private void OnTriggerStay(Collider other)
     {
+        _collider = other;
         Detected = true;
-        Debug.Log(other.gameObject.name);
+    }
+
+    private void Update()
+    {
+        if (Detected && !_collider)
+        {
+            Detected = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)

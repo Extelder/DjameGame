@@ -20,6 +20,14 @@ public class PlayerInteract : RaycastBehaviour
         StopAllCoroutines();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            TryInteract();
+        }
+    }
+
     public void TryInteract()
     {
         if (_interactable != null)
