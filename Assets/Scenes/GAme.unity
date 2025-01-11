@@ -20722,6 +20722,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 4582019824381016673, guid: a01c7516e659bdf4b9897ab54df69b69,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4582019824381016678, guid: a01c7516e659bdf4b9897ab54df69b69,
         type: 3}
       propertyPath: m_RootOrder
@@ -26592,6 +26597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackKey: 323
   _attackBoolAnimationName: Attacking
+  _bladeCollider: {fileID: 0}
+  <Damage>k__BackingField: 0
 --- !u!1 &1791950539
 GameObject:
   m_ObjectHideFlags: 0
