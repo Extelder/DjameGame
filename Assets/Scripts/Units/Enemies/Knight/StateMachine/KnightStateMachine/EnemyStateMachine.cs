@@ -7,9 +7,10 @@ public class EnemyStateMachine : StateMachine
     [SerializeField] private EnemyPatrolState _patrolEnemyState;
     [SerializeField] private EnemyChaseState _chaseEnemyState;
     [SerializeField] private EnemyOverlapAttackState _overlapAttackEnemyState;
+    [SerializeField] private EnemyLookingState _lookEnemyState;
 
     [Header("Scripts")]
-    [SerializeField] private EnemyPlayerDetect _playerDetect;
+    [SerializeField] private FieldOfView _playerDetect;
     [SerializeField] private EnemyGoingToOverlapAttack _enemyGoingToOverlapAttack;
 
     private void Awake()
@@ -28,6 +29,10 @@ public class EnemyStateMachine : StateMachine
     }
     public void Chase()
     {
+        if (CurrentState == _lookEnemyState)
+        {
+            CurrentState.CanChangeState = true;
+        }
         ChangeState(_chaseEnemyState);
     }
     public void OverlapAttack()
@@ -39,6 +44,12 @@ public class EnemyStateMachine : StateMachine
         ChangeState(_overlapAttackEnemyState);
     }
 
+    public void Look()
+    {
+        if(CurrentState == _chaseEnemyState || CurrentState == _overlapAttackEnemyState)
+            ChangeState(_lookEnemyState);
+    }
+
     private void Update()
     {
         CurrentState.StateUpdate();
@@ -47,14 +58,14 @@ public class EnemyStateMachine : StateMachine
     private void OnEnable()
     {
         _playerDetect.PlayerDetected += Chase;
-        _playerDetect.PlayerLost += Patrol;
+        _playerDetect.PlayerLost += Look;
         _enemyGoingToOverlapAttack.PlayerAttacked += OverlapAttack;
     }
 
     private void OnDisable()
     {
         _playerDetect.PlayerDetected -= Chase;
-        _playerDetect.PlayerLost -= Patrol;
+        _playerDetect.PlayerLost -= Look;
         _enemyGoingToOverlapAttack.PlayerAttacked -= OverlapAttack;
     }
 }
