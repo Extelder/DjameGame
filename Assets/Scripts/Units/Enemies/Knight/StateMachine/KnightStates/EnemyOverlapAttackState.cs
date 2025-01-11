@@ -11,7 +11,6 @@ public class EnemyOverlapAttackState : EnemyState
 
     public override void Enter()
     {
-        Debug.Log("EBALO V KROSHKI");
         _agent.isStopped = true;
         CanChangeState = false;
         PlayAttackAnim(true);
@@ -31,7 +30,6 @@ public class EnemyOverlapAttackState : EnemyState
 
     public void EndAnimationAttack()
     {
-        Debug.Log("может идти");
         _agent.isStopped = false;
         CanChangeState = true;
     }
