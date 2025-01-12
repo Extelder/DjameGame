@@ -155,7 +155,7 @@ PrefabInstance:
     - target: {fileID: 583517981355060647, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.992001
+      value: 7.4920006
       objectReference: {fileID: 0}
     - target: {fileID: 583517981355060647, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
@@ -237,6 +237,11 @@ PrefabInstance:
       propertyPath: _bloodPool
       value: 
       objectReference: {fileID: 758026117}
+    - target: {fileID: 6335220506871013893, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 7530534009118220914, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -1065,7 +1070,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -1943,7 +1948,7 @@ GameObject:
   - component: {fileID: 89138908}
   - component: {fileID: 89138907}
   - component: {fileID: 89138906}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wood (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4363,7 +4368,7 @@ PrefabInstance:
     - target: {fileID: 8175927956360384182, guid: da0529ba1785f4b44b0d561822516764,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5440209
+      value: -3.205979
       objectReference: {fileID: 0}
     - target: {fileID: 8175927956360384182, guid: da0529ba1785f4b44b0d561822516764,
         type: 3}
@@ -6229,7 +6234,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6725322, b: 0.4009434, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 2
   m_Range: 5
   m_SpotAngle: 30
@@ -6304,7 +6309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187213361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.580188, y: -2.962, z: -16.479}
+  m_LocalPosition: {x: 7.580188, y: 0.552, z: -16.479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9703,6 +9708,11 @@ PrefabInstance:
       propertyPath: _bloodPool
       value: 
       objectReference: {fileID: 758026117}
+    - target: {fileID: 6335220506871013893, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 8231228489260929704, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: _player
@@ -10156,7 +10166,7 @@ PrefabInstance:
     - target: {fileID: 8175927956360384182, guid: da0529ba1785f4b44b0d561822516764,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54400086
+      value: -3.2059991
       objectReference: {fileID: 0}
     - target: {fileID: 8175927956360384182, guid: da0529ba1785f4b44b0d561822516764,
         type: 3}
@@ -11347,7 +11357,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -12884,7 +12894,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6725322, b: 0.4009434, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -15314,7 +15324,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -18705,7 +18715,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6725322, b: 0.4009434, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -22738,7 +22748,7 @@ GameObject:
   - component: {fileID: 821473548}
   - component: {fileID: 821473550}
   - component: {fileID: 821473551}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wood (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22971,6 +22981,11 @@ PrefabInstance:
       propertyPath: _bloodPool
       value: 
       objectReference: {fileID: 758026117}
+    - target: {fileID: 6335220506871013893, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 7530534009118220914, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -24274,7 +24289,7 @@ PrefabInstance:
     - target: {fileID: 8175927956360384182, guid: da0529ba1785f4b44b0d561822516764,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54411197
+      value: -3.205888
       objectReference: {fileID: 0}
     - target: {fileID: 8175927956360384182, guid: da0529ba1785f4b44b0d561822516764,
         type: 3}
@@ -25629,7 +25644,7 @@ GameObject:
   - component: {fileID: 912598442}
   - component: {fileID: 912598444}
   - component: {fileID: 912598445}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wood (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26704,14 +26719,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941180881}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6359644, y: 1, z: -20.26155}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 818311011}
-  m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_Father: {fileID: 1223128861}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &943984874
 PrefabInstance:
@@ -28603,6 +28618,11 @@ PrefabInstance:
       propertyPath: _bloodPool
       value: 
       objectReference: {fileID: 758026117}
+    - target: {fileID: 6335220506871013893, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 7530534009118220914, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -28783,7 +28803,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -32188,7 +32208,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8223355, b: 0.5801887, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -32710,7 +32730,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -33790,7 +33810,7 @@ GameObject:
   - component: {fileID: 1199752433}
   - component: {fileID: 1199752435}
   - component: {fileID: 1199752436}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wood (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34162,6 +34182,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1714364419}
   m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1223128860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223128861}
+  m_Layer: 0
+  m_Name: "\u0431\u043E\u0431\u0430"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223128861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223128860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3640356, y: 3.5, z: -0.011550903}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 941180883}
+  m_Father: {fileID: 0}
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227723667
 GameObject:
@@ -34731,6 +34783,11 @@ PrefabInstance:
       propertyPath: _bloodPool
       value: 
       objectReference: {fileID: 758026117}
+    - target: {fileID: 6335220506871013893, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 7530534009118220914, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -37047,7 +37104,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8223355, b: 0.5801887, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -37213,7 +37270,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1d1742c07be3c2d4ba794fbb9eb67283,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d1742c07be3c2d4ba794fbb9eb67283,
         type: 3}
@@ -42284,7 +42341,7 @@ GameObject:
   - component: {fileID: 1491434773}
   - component: {fileID: 1491434772}
   - component: {fileID: 1491434771}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wood (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42954,7 +43011,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8223355, b: 0.5801887, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -43720,7 +43777,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -44599,6 +44656,11 @@ PrefabInstance:
       propertyPath: _bloodPool
       value: 
       objectReference: {fileID: 758026117}
+    - target: {fileID: 6335220506871013893, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
+      objectReference: {fileID: 0}
     - target: {fileID: 7530534009118220914, guid: 4bb5fd8dd746bbc419cea91bf677f7fd,
         type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -46167,7 +46229,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -47382,7 +47444,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6725322, b: 0.4009434, a: 1}
+  m_Color: {r: 0.77032524, g: 0.9607843, b: 0.6392157, a: 1}
   m_Intensity: 2
   m_Range: 5
   m_SpotAngle: 30
@@ -48942,7 +49004,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -50957,7 +51019,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -53538,7 +53600,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.48584908, g: 0.81223476, b: 1, a: 1}
+  m_Color: {r: 0.48627448, g: 1, b: 0.78090876, a: 1}
   m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
@@ -60622,6 +60684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -95.364
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121715438277889353, guid: dc4462c03248a874090b51dc786de081,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.00001
       objectReference: {fileID: 0}
     - target: {fileID: 8673982904192009150, guid: dc4462c03248a874090b51dc786de081,
         type: 3}

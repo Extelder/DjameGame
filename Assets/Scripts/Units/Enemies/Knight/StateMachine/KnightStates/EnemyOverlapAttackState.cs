@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyOverlapAttackState : EnemyState
 {
@@ -37,6 +38,7 @@ public class EnemyOverlapAttackState : EnemyState
     public void Attack()
     {
         _enemyGoingToOverlapAttack.PerformAttack();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void PlayAttackAnim(bool isAttacking)
