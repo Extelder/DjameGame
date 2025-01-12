@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18808,6 +18808,49 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.4466186, y: 1.7915725, z: 5.021041}
   m_Center: {x: -0.30124685, y: 0.25365052, z: -0.56279576}
+--- !u!114 &818311014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818311010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e71f1b08ed1b8c4bb724cdbdee651f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 818311015}
+  _objects:
+  - {fileID: 941180881}
+  - {fileID: 187213361}
+  _sound: {fileID: 0}
+--- !u!114 &818311015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818311010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18528fa84c313cd41afd447b1bc4dbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxValue>k__BackingField: 25
+--- !u!114 &818311016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818311010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910c15e7f85e03c42b34270369f6a084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio: {fileID: 0}
 --- !u!1 &821473546
 GameObject:
   m_ObjectHideFlags: 0
@@ -22116,9 +22159,6 @@ GameObject:
   m_Component:
   - component: {fileID: 941180883}
   - component: {fileID: 941180882}
-  - component: {fileID: 941180884}
-  - component: {fileID: 941180885}
-  - component: {fileID: 941180886}
   m_Layer: 0
   m_Name: ButterFly
   m_TagString: Untagged
@@ -22163,49 +22203,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &941180884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941180881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e71f1b08ed1b8c4bb724cdbdee651f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: {fileID: 941180885}
-  _objects:
-  - {fileID: 941180881}
-  - {fileID: 187213361}
-  _sound: {fileID: 0}
---- !u!114 &941180885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941180881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18528fa84c313cd41afd447b1bc4dbfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <MaxValue>k__BackingField: 25
---- !u!114 &941180886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941180881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 910c15e7f85e03c42b34270369f6a084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audio: {fileID: 0}
 --- !u!1001 &943984874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35428,6 +35425,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 818311013}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fba568fa84093594f8cd393c1adae455,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818311016}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fba568fa84093594f8cd393c1adae455,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818311015}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fba568fa84093594f8cd393c1adae455,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818311014}
   m_SourcePrefab: {fileID: 100100000, guid: fba568fa84093594f8cd393c1adae455, type: 3}
 --- !u!1001 &1476788410
 PrefabInstance:
